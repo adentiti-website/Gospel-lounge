@@ -1,4 +1,81 @@
-.hero-real-logo {
+
+/* ========================================
+   DONATION INCOME TAX RECEIPT
+======================================== */
+
+.tax-receipt {
+  margin: 1.4rem 0 1.6rem;
+  padding: 1rem 1.2rem;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(229, 182, 64, 0.10),
+      rgba(229, 182, 64, 0.03)
+    );
+
+  border: 1px solid rgba(229, 182, 64, 0.35);
+  border-radius: 14px;
+}
+
+.tax-receipt-label {
+  display: block;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+
+  color: var(--gold);
+}
+
+.tax-receipt-amount {
+  margin: 0.25rem 0 0.05rem;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.3rem;
+  line-height: 1;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.tax-receipt small {
+  display: block;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Highlight receipt on featured $80 pass */
+.ticket-card.featured .tax-receipt {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(229, 182, 64, 0.18),
+      rgba(229, 182, 64, 0.05)
+    );
+
+  border-color: rgba(229, 182, 64, 0.55);
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+
+  .tax-receipt {
+    padding: 0.9rem 1rem;
+  }
+
+  .tax-receipt-amount {
+    font-size: 2rem;
+  }
+
+}.hero-real-logo {
   width: min(420px, 82vw);
   height: auto;
   margin: 0 auto;
