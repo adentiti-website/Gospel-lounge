@@ -1,3 +1,410 @@
+/* ==================================================
+   CONTACT / INTAKE FORM
+================================================== */
+
+.contact-section {
+  padding: 9rem 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(108, 21, 146, 0.30),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(229, 182, 64, 0.10),
+      transparent 25%
+    ),
+    linear-gradient(
+      145deg,
+      #060309,
+      #12051c 55%,
+      #070309
+    );
+}
+
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.9fr
+    1.1fr;
+
+  gap: 6rem;
+
+  align-items: center;
+}
+
+
+/* =========================
+   LEFT CONTACT INFO
+========================= */
+
+.contact-info h2 {
+  max-width: 600px;
+}
+
+.contact-info > p {
+  max-width: 570px;
+
+  margin-top: 1.5rem;
+
+  color: rgba(255,255,255,0.68);
+
+  font-size: 1rem;
+}
+
+
+.contact-details {
+  display: grid;
+
+  gap: 1rem;
+
+  margin-top: 2.5rem;
+}
+
+
+.contact-detail-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1.2rem 1.3rem;
+
+  border-radius: 18px;
+
+  border:
+    1px solid
+    rgba(229,182,64,0.18);
+
+  background:
+    rgba(255,255,255,0.035);
+
+  transition: 0.3s ease;
+}
+
+
+.contact-detail-card:hover {
+  transform: translateX(7px);
+
+  border-color:
+    rgba(229,182,64,0.55);
+
+  background:
+    rgba(229,182,64,0.05);
+}
+
+
+.contact-detail-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--gold-light),
+      var(--gold)
+    );
+
+  color: #17051f;
+
+  font-size: 1.2rem;
+
+  font-weight: 800;
+}
+
+
+.contact-detail-card small {
+  display: block;
+
+  margin-bottom: 0.25rem;
+
+  font-size: 0.67rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+
+  color: var(--gold);
+}
+
+
+.contact-detail-card strong {
+  color: #ffffff;
+
+  font-size: 0.96rem;
+
+  word-break: break-word;
+}
+
+
+.contact-message {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  margin-top: 2rem;
+
+  color:
+    rgba(255,255,255,0.55);
+}
+
+
+.contact-message span {
+  color: var(--gold);
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.contact-form-card {
+  padding: 2.7rem;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fffaf0,
+      #efe2bd
+    );
+
+  color: #1c0b26;
+
+  border:
+    1px solid
+    rgba(255,255,255,0.5);
+
+  box-shadow:
+    0 40px 100px rgba(0,0,0,0.35);
+}
+
+
+.contact-form-heading {
+  margin-bottom: 2rem;
+}
+
+
+.contact-form-heading > span {
+  display: block;
+
+  margin-bottom: 0.55rem;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  color: #6a1592;
+}
+
+
+.contact-form-heading h3 {
+  font-size:
+    clamp(
+      2.2rem,
+      4vw,
+      3.2rem
+    );
+
+  color: #260738;
+}
+
+
+.contact-form-heading p {
+  margin-top: 0.5rem;
+
+  color: #746879;
+}
+
+
+/* =========================
+   FIELDS
+========================= */
+
+.contact-form {
+  display: grid;
+
+  gap: 1.25rem;
+}
+
+
+.form-group {
+  display: grid;
+
+  gap: 0.5rem;
+}
+
+
+.form-group label {
+  font-size: 0.8rem;
+
+  font-weight: 800;
+
+  color: #31103f;
+}
+
+
+.form-group label span {
+  color: #968a98;
+
+  font-weight: 500;
+
+  font-size: 0.72rem;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 1rem 1.05rem;
+
+  border-radius: 12px;
+
+  border:
+    1px solid
+    rgba(50,15,62,0.16);
+
+  background:
+    rgba(255,255,255,0.80);
+
+  color: #211126;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.9rem;
+
+  outline: none;
+
+  transition: 0.25s ease;
+}
+
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 150px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #7b258e;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(107,21,146,0.08);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a79ca9;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.contact-submit {
+  width: 100%;
+
+  border: 0;
+
+  cursor: pointer;
+
+  margin-top: 0.5rem;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.92rem;
+}
+
+
+.contact-submit span {
+  margin-left: 0.6rem;
+
+  transition: 0.3s ease;
+}
+
+
+.contact-submit:hover span {
+  transform: translateX(5px);
+}
+
+
+.form-note {
+  text-align: center;
+
+  font-size: 0.7rem;
+
+  line-height: 1.5;
+
+  color: #8b7d8f;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 960px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+
+    gap: 3.5rem;
+  }
+
+}
+
+
+@media (max-width: 680px) {
+
+  .contact-section {
+    padding: 6rem 0;
+  }
+
+  .contact-form-card {
+    padding:
+      2rem
+      1.3rem;
+
+    border-radius: 22px;
+  }
+
+  .contact-detail-card {
+    padding: 1rem;
+  }
+
+  .contact-detail-card strong {
+    font-size: 0.86rem;
+  }
+
+}
 /* ========================================
    DONATION INCOME TAX RECEIPT
    HIGH-CONTRAST DARK VERSION
