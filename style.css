@@ -1,3 +1,98 @@
+/* =========================
+   DINING IMAGE
+========================= */
+
+.dining-image-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid rgba(229, 182, 64, 0.35);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.35),
+    0 0 35px rgba(229, 182, 64, 0.08);
+}
+
+.dining-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.7s ease;
+}
+
+.dining-image-wrap:hover .dining-image {
+  transform: scale(1.04);
+}
+
+/* Dark gradient makes text readable */
+.dining-image-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 4, 7, 0.05) 20%,
+      rgba(5, 4, 7, 0.25) 55%,
+      rgba(5, 4, 7, 0.92) 100%
+    );
+}
+
+/* Text over image */
+.dining-image-caption {
+  position: absolute;
+  left: 2.2rem;
+  right: 2.2rem;
+  bottom: 2.2rem;
+  z-index: 2;
+}
+
+.dining-image-caption span {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: #e5b640;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.dining-image-caption strong {
+  display: block;
+  color: #fff8e9;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.dining-image-caption small {
+  display: block;
+  margin-top: 0.8rem;
+  color: rgba(255, 248, 233, 0.82);
+  font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .dining-image-wrap {
+    min-height: 430px;
+    border-radius: 20px;
+  }
+
+  .dining-image-caption {
+    left: 1.4rem;
+    right: 1.4rem;
+    bottom: 1.5rem;
+  }
+
+  .dining-image-caption strong {
+    font-size: 2.3rem;
+  }
+}
 /* ==================================================
    CONTACT / INTAKE FORM
 ================================================== */
