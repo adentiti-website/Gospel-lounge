@@ -594,9 +594,7 @@
     <!-- CONTACT INFO -->
     <div class="contact-info">
 
-      <span class="section-label">
-        GET IN TOUCH
-      </span>
+      <span class="section-label">GET IN TOUCH</span>
 
       <h2>
         We'd Love to
@@ -611,6 +609,7 @@
 
       <div class="contact-details">
 
+        <!-- PHONE ONLY -->
         <a href="tel:+14374210296" class="contact-detail-card">
           <div class="contact-detail-icon">☎</div>
 
@@ -620,22 +619,11 @@
           </div>
         </a>
 
-        <a href="mailto:Cloudtronixps@gmail.com" class="contact-detail-card">
-          <div class="contact-detail-icon">✉</div>
-
-          <div>
-            <small>EMAIL US</small>
-            <strong>Cloudtronixps@gmail.com</strong>
-          </div>
-        </a>
-
       </div>
 
       <div class="contact-message">
         <span>✦</span>
-        <p>
-          Music • Food • Friendship • Fellowship
-        </p>
+        <p>Music • Food • Friendship • Fellowship</p>
       </div>
 
     </div>
@@ -647,6 +635,7 @@
       <div class="contact-form-heading">
         <span>GOSPEL LOUNGE</span>
         <h3>Send Us a Message</h3>
+
         <p>
           Complete the form below and we'll be in touch.
         </p>
@@ -658,7 +647,8 @@
         class="contact-form"
       >
 
-        <!-- FormSubmit settings -->
+        <!-- FormSubmit Settings -->
+
         <input
           type="hidden"
           name="_subject"
@@ -671,18 +661,18 @@
           value="table"
         >
 
+        <!-- Spam protection -->
         <input
-          type="hidden"
-          name="_captcha"
-          value="false"
+          type="text"
+          name="_honey"
+          style="display:none"
         >
 
 
         <!-- NAME -->
         <div class="form-group">
-          <label for="name">
-            Full Name
-          </label>
+
+          <label for="name">Full Name</label>
 
           <input
             type="text"
@@ -691,14 +681,14 @@
             placeholder="Enter your full name"
             required
           >
+
         </div>
 
 
         <!-- EMAIL -->
         <div class="form-group">
-          <label for="email">
-            Email Address
-          </label>
+
+          <label for="email">Email Address</label>
 
           <input
             type="email"
@@ -707,11 +697,13 @@
             placeholder="Enter your email address"
             required
           >
+
         </div>
 
 
-        <!-- PHONE OPTIONAL -->
+        <!-- PHONE -->
         <div class="form-group">
+
           <label for="phone">
             Phone Number
             <span>Optional</span>
@@ -723,11 +715,13 @@
             name="Phone"
             placeholder="Your phone number"
           >
+
         </div>
 
 
-        <!-- SUBJECT -->
+        <!-- INQUIRY TYPE -->
         <div class="form-group">
+
           <label for="inquiry">
             I'm Contacting You About
           </label>
@@ -737,6 +731,7 @@
             name="Inquiry Type"
             required
           >
+
             <option value="" disabled selected>
               Select an option
             </option>
@@ -768,15 +763,16 @@
             <option value="Other">
               Other
             </option>
+
           </select>
+
         </div>
 
 
         <!-- MESSAGE -->
         <div class="form-group">
-          <label for="message">
-            Message
-          </label>
+
+          <label for="message">Message</label>
 
           <textarea
             id="message"
@@ -785,6 +781,7 @@
             placeholder="Tell us how we can help..."
             required
           ></textarea>
+
         </div>
 
 
@@ -809,7 +806,6 @@
   </div>
 
 </section>
-
   <!-- =========================
        FOOTER
   ========================== -->
