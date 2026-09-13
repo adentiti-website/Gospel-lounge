@@ -3053,9 +3053,32 @@ p {
   }
 
 }
-.dining-image-wrap {
+/* ==================================================
+   FINAL IMAGE RESPONSIVE FIX
+   MUST BE LAST IN STYLE.CSS
+================================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logo */
+.site-logo {
   width: 100%;
-  min-height: 560px;
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Dining image */
+.dining-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .dining-image {
@@ -3064,4 +3087,82 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================
+   IPAD
+========================= */
+
+@media (max-width: 1024px) {
+
+  .dining-visual {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .dining-image-wrap {
+    aspect-ratio: 16 / 11;
+    min-height: 0;
+  }
+
+  .site-logo {
+    max-width: 145px;
+  }
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 680px) {
+
+  .dining-visual {
+    width: 100%;
+  }
+
+  .dining-image-wrap {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    min-height: 0;
+    border-radius: 20px;
+  }
+
+  .dining-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .dining-image-caption {
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+
+  .site-logo {
+    max-width: 125px;
+    width: auto;
+    height: auto;
+  }
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 390px) {
+
+  .dining-image-wrap {
+    aspect-ratio: 3 / 4;
+  }
+
+  .site-logo {
+    max-width: 110px;
+  }
 }
