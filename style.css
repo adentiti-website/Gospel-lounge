@@ -1,3 +1,272 @@
+/* ==================================================
+   RESPONSIVE POLISH OVERRIDES
+   iPhone • iPad • Desktop
+   Add this at the very END of style.css
+================================================== */
+
+
+/* GLOBAL SAFETY */
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 95px;
+}
+
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+
+/* Prevent iPhone zoom when tapping form fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-size: 16px;
+}
+
+
+/* =========================
+   TABLET / IPAD
+========================= */
+
+@media (max-width: 1024px) {
+
+  .nav-container {
+    width: min(94%, 1000px);
+  }
+
+  .section-container {
+    width: min(92%, 1000px);
+  }
+
+  .hero-content {
+    width: min(92%, 900px);
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ticket-grid {
+    max-width: 760px;
+  }
+
+  .dining-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .dining-visual {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .contact-info {
+    max-width: 700px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+}
+
+
+/* =========================
+   IPHONE / MOBILE
+========================= */
+
+@media (max-width: 680px) {
+
+  .section-container {
+    width: calc(100% - 32px);
+  }
+
+  .nav-container {
+    width: calc(100% - 28px);
+  }
+
+  .hero {
+    padding:
+      118px
+      16px
+      70px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-logo-main {
+    font-size: clamp(3rem, 16vw, 4.2rem);
+  }
+
+  .hero-logo-script {
+    font-size: clamp(3rem, 16vw, 4.2rem);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.9rem, 14vw, 4.5rem);
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
+  }
+
+  .highlight {
+    padding: 1rem 1.1rem;
+  }
+
+  .intro-grid,
+  .experience-grid,
+  .ticket-grid,
+  .dining-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-stat-card {
+    min-height: 340px;
+  }
+
+  .experience-card {
+    min-height: auto;
+    padding: 1.7rem;
+  }
+
+  .ticket-card {
+    padding: 1.8rem 1.25rem;
+  }
+
+  .ticket-card.featured {
+    transform: none;
+  }
+
+  .ticket-price strong {
+    font-size: 5.5rem;
+  }
+
+  .tax-receipt {
+    padding: 1rem;
+  }
+
+  .tax-receipt-amount {
+    font-size: 2.6rem;
+  }
+
+  .tax-receipt-label {
+    font-size: 0.63rem;
+  }
+
+  .dining-image-wrap {
+    min-height: 410px;
+  }
+
+  .dining-image-caption {
+    left: 1.3rem;
+    right: 1.3rem;
+    bottom: 1.4rem;
+  }
+
+  .dining-image-caption strong {
+    font-size: 2.2rem;
+  }
+
+  .purpose-values {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta-inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .final-cta .btn {
+    width: 100%;
+  }
+
+  .contact-form-card {
+    padding: 1.7rem 1.15rem;
+  }
+
+  .contact-detail-card {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+/* =========================
+   SMALL IPHONE
+========================= */
+
+@media (max-width: 390px) {
+
+  .hero-logo-main {
+    font-size: 3rem;
+  }
+
+  .hero-logo-script {
+    font-size: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.9rem;
+  }
+
+  .ticket-price strong {
+    font-size: 5rem;
+  }
+
+  .ticket-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem 1rem;
+  }
+
+}
 /* =========================
    DINING IMAGE
 ========================= */
