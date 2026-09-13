@@ -3053,3 +3053,15 @@ p {
   }
 
 }
+.dining-image-wrap {
+  width: 100%;
+  min-height: 560px;
+}
+
+.dining-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
