@@ -680,31 +680,28 @@
 
 
       <form
-        action="https://formsubmit.co/gospelloungecanada@gmail.com"
-        method="POST"
-        class="contact-form"
-      >
+  id="contactForm"
+  class="contact-form"
+>
 
-        <!-- FormSubmit Settings -->
+  <input
+    type="hidden"
+    name="access_key"
+    value="YOUR_WEB3FORMS_ACCESS_KEY"
+  >
 
-        <input
-          type="hidden"
-          name="_subject"
-          value="New Gospel Lounge Website Inquiry"
-        >
+  <input
+    type="hidden"
+    name="subject"
+    value="New Gospel Lounge Website Inquiry"
+  >
 
-        <input
-          type="hidden"
-          name="_template"
-          value="table"
-        >
-
-        <!-- Spam Protection -->
-        <input
-          type="text"
-          name="_honey"
-          style="display:none"
-        >
+  <input
+    type="checkbox"
+    name="botcheck"
+    style="display:none"
+  >
+        <p id="formResult" class="form-note"></p>
 
 
         <!-- NAME -->
