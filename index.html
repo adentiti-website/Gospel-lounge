@@ -976,44 +976,7 @@
   </footer>
 
 
-  <!-- =========================
-       MOBILE MENU SCRIPT
-  ========================== -->
-  <script>
 
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".main-nav");
-
-    toggle.addEventListener("click", () => {
-
-      nav.classList.toggle("active");
-
-      const expanded =
-        toggle.getAttribute("aria-expanded") === "true";
-
-      toggle.setAttribute(
-        "aria-expanded",
-        !expanded
-      );
-
-    });
-
-    document.querySelectorAll(".main-nav a").forEach(link => {
-
-      link.addEventListener("click", () => {
-
-        nav.classList.remove("active");
-
-        toggle.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-      });
-
-    });
-
-  </script>
 <script src="script.js"></script>
 </body>
 </html>
