@@ -679,10 +679,15 @@
       </div>
 
 
-      <form
+  <form
   id="contactForm"
   class="contact-form"
+  novalidate
 >
+
+  <!-- =========================
+       WEB3FORMS PRIMARY SERVICE
+  ========================== -->
 
   <input
     type="hidden"
@@ -697,146 +702,190 @@
   >
 
   <input
+    type="hidden"
+    name="from_name"
+    value="Gospel Lounge Website"
+  >
+
+  <!-- Unique submission reference -->
+  <input
+    type="hidden"
+    name="Submission ID"
+    id="submissionId"
+    value=""
+  >
+
+  <!-- Honeypot / bot protection -->
+  <input
     type="checkbox"
     name="botcheck"
+    tabindex="-1"
+    autocomplete="off"
     style="display:none"
   >
-        <p id="formResult" class="form-note"></p>
 
 
-        <!-- NAME -->
-        <div class="form-group">
+  <!-- NAME -->
+  <div class="form-group">
 
-          <label for="name">Full Name</label>
+    <label for="name">
+      Full Name
+    </label>
 
-          <input
-            type="text"
-            id="name"
-            name="Name"
-            placeholder="Enter your full name"
-            required
-          >
+    <input
+      type="text"
+      id="name"
+      name="Name"
+      placeholder="Enter your full name"
+      autocomplete="name"
+      maxlength="100"
+      required
+    >
 
-        </div>
-
-
-        <!-- EMAIL -->
-        <div class="form-group">
-
-          <label for="email">Email Address</label>
-
-          <input
-            type="email"
-            id="email"
-            name="Email"
-            placeholder="Enter your email address"
-            required
-          >
-
-        </div>
+  </div>
 
 
-        <!-- PHONE -->
-        <div class="form-group">
+  <!-- EMAIL -->
+  <div class="form-group">
 
-          <label for="phone">
-            Phone Number
-            <span>Optional</span>
-          </label>
+    <label for="email">
+      Email Address
+    </label>
 
-          <input
-            type="tel"
-            id="phone"
-            name="Phone"
-            placeholder="Your phone number"
-          >
+    <input
+      type="email"
+      id="email"
+      name="Email"
+      placeholder="Enter your email address"
+      autocomplete="email"
+      maxlength="254"
+      required
+    >
 
-        </div>
-
-
-        <!-- INQUIRY TYPE -->
-        <div class="form-group">
-
-          <label for="inquiry">
-            I'm Contacting You About
-          </label>
-
-          <select
-            id="inquiry"
-            name="Inquiry Type"
-            required
-          >
-
-            <option value="" disabled selected>
-              Select an option
-            </option>
-
-            <option value="General Inquiry">
-              General Inquiry
-            </option>
-
-            <option value="Tickets">
-              Tickets
-            </option>
-
-            <option value="Upcoming Events">
-              Upcoming Events
-            </option>
-
-            <option value="Group Attendance">
-              Group Attendance
-            </option>
-
-            <option value="Artist / Performer">
-              Artist / Performer
-            </option>
-
-            <option value="Partnership">
-              Partnership
-            </option>
-
-            <option value="Other">
-              Other
-            </option>
-
-          </select>
-
-        </div>
+  </div>
 
 
-        <!-- MESSAGE -->
-        <div class="form-group">
+  <!-- PHONE -->
+  <div class="form-group">
 
-          <label for="message">Message</label>
+    <label for="phone">
+      Phone Number
+      <span>Optional</span>
+    </label>
 
-          <textarea
-            id="message"
-            name="Message"
-            rows="6"
-            placeholder="Tell us how we can help..."
-            required
-          ></textarea>
+    <input
+      type="tel"
+      id="phone"
+      name="Phone"
+      placeholder="Your phone number"
+      autocomplete="tel"
+      maxlength="30"
+    >
 
-        </div>
-
-
-        <!-- SUBMIT -->
-        <button
-          type="submit"
-          class="btn btn-gold contact-submit"
-        >
-          Send Message
-          <span>→</span>
-        </button>
+  </div>
 
 
-        <p class="form-note">
-          By submitting this form, you agree to be contacted
-          regarding your inquiry.
-        </p>
+  <!-- INQUIRY TYPE -->
+  <div class="form-group">
 
-      </form>
+    <label for="inquiry">
+      I'm Contacting You About
+    </label>
 
+    <select
+      id="inquiry"
+      name="Inquiry Type"
+      required
+    >
+
+      <option value="" disabled selected>
+        Select an option
+      </option>
+
+      <option value="General Inquiry">
+        General Inquiry
+      </option>
+
+      <option value="Tickets">
+        Tickets
+      </option>
+
+      <option value="Upcoming Events">
+        Upcoming Events
+      </option>
+
+      <option value="Group Attendance">
+        Group Attendance
+      </option>
+
+      <option value="Artist / Performer">
+        Artist / Performer
+      </option>
+
+      <option value="Partnership">
+        Partnership
+      </option>
+
+      <option value="Other">
+        Other
+      </option>
+
+    </select>
+
+  </div>
+
+
+  <!-- MESSAGE -->
+  <div class="form-group">
+
+    <label for="message">
+      Message
+    </label>
+
+    <textarea
+      id="message"
+      name="Message"
+      rows="6"
+      placeholder="Tell us how we can help..."
+      maxlength="5000"
+      required
+    ></textarea>
+
+  </div>
+
+
+  <!-- SUBMIT -->
+  <button
+    type="submit"
+    class="btn btn-gold contact-submit"
+    id="contactSubmit"
+  >
+    <span class="submit-text">
+      Send Message
+    </span>
+
+    <span class="submit-arrow">
+      →
+    </span>
+  </button>
+
+
+  <!-- RESULT MESSAGE -->
+  <p
+    id="formResult"
+    class="form-note"
+    role="status"
+    aria-live="polite"
+  ></p>
+
+
+  <!-- PRIVACY NOTE -->
+  <p class="form-note">
+    By submitting this form, you agree to be contacted
+    regarding your inquiry.
+  </p>
+
+</form>
     </div>
 
   </div>
