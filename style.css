@@ -1,3 +1,92 @@
+
+/* FREE SOFT LAUNCH TICKET */
+
+.soft-launch-card {
+  border: 2px solid rgba(229, 182, 64, 0.65);
+}
+
+.free-ticket-price {
+  font-size: clamp(3.5rem, 6vw, 5rem) !important;
+  color: #39085e;
+  letter-spacing: -0.04em;
+  margin: 0.5rem 0;
+}
+
+.soft-launch-notice {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: #250b36;
+  color: #fff8e9;
+  text-align: center;
+}
+
+.soft-launch-notice strong {
+  display: block;
+  color: #ffe29a;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+
+.soft-launch-notice p {
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.btn-soft-launch {
+  background: linear-gradient(135deg, #39085e, #6a1592);
+  color: #ffffff;
+  border: 1px solid #e5b640;
+}
+
+.btn-soft-launch:hover {
+  background: #250738;
+  transform: translateY(-3px);
+}
+
+.soft-launch-footnote {
+  text-align: center;
+  font-size: 0.72rem;
+  color: #786e7a;
+  margin-top: 1rem;
+}
+
+/* THREE TICKET COLUMNS ON DESKTOP */
+
+@media (min-width: 1101px) {
+  .ticket-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1180px;
+    align-items: stretch;
+  }
+
+  .ticket-card {
+    min-width: 0;
+  }
+}
+
+/* TWO COLUMNS ON TABLETS */
+
+@media (min-width: 681px) and (max-width: 1100px) {
+  .ticket-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 900px;
+  }
+}
+
+/* ONE COLUMN ON PHONES */
+
+@media (max-width: 680px) {
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .free-ticket-price {
+    font-size: 4rem !important;
+  }
+}
+
 /* ==================================================
    RESPONSIVE POLISH OVERRIDES
    iPhone • iPad • Desktop
