@@ -1,4 +1,71 @@
+    .soft-launch-top-banner {
+      background: linear-gradient(110deg, #230b39, #51116d, #260b3b);
+      color: #ffffff;
+      padding: 13px 20px;
+      text-align: center;
+      border-bottom: 2px solid #d9ae57;
+      position: relative;
+      z-index: 1000;
+    }
 
+    .soft-launch-top-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .soft-launch-top-label {
+      color: #f4d58b;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .soft-launch-top-message {
+      color: #ffffff;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .soft-launch-top-button {
+      display: inline-block;
+      padding: 9px 18px;
+      background: #e9c46a;
+      color: #24102d;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 800;
+      border-radius: 30px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .soft-launch-top-button:hover {
+      background: #fff0ba;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 680px) {
+      .soft-launch-top-banner {
+        padding: 12px 15px;
+      }
+
+      .soft-launch-top-content {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .soft-launch-top-message {
+        font-size: 12px;
+      }
+
+      .soft-launch-top-button {
+        margin-top: 4px;
+      }
+    }
 /* FREE SOFT LAUNCH TICKET */
 
 .soft-launch-card {
