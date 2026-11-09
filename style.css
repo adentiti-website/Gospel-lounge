@@ -1,4 +1,69 @@
 
+/* GOSPEL LOUNGE BANNER TEXT & BUTTON UPDATE */
+
+/* FREE SOFT LAUNCH - Bigger */
+.soft-launch-top-label {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* JANUARY 17, 2027 - Smaller and gold */
+.soft-launch-date {
+  font-size: clamp(18px, 2.2vw, 28px);
+  font-weight: 800;
+  color: #f5d27d;
+}
+
+/* Discover Gospel Lounge - Bigger */
+.soft-launch-top-message {
+  font-size: clamp(23px, 3vw, 36px);
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* You're Invited - Bigger */
+.soft-launch-top-message span {
+  display: block;
+  font-size: 0.75em;
+  color: #ffffff;
+}
+
+/* REGISTER FOR FREE - Same gold as date */
+.soft-launch-top-button {
+  background: #f5d27d;
+  color: #250b36;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 800;
+  padding: 16px 36px;
+  border-radius: 50px;
+}
+
+.soft-launch-top-button:hover {
+  background: #ffe6a6;
+  color: #250b36;
+}
+
+/* MOBILE */
+@media (max-width: 680px) {
+  .soft-launch-top-label {
+    font-size: 34px;
+  }
+
+  .soft-launch-date {
+    font-size: 20px;
+  }
+
+  .soft-launch-top-message {
+    font-size: 24px;
+  }
+
+  .soft-launch-top-button {
+    font-size: 19px;
+    padding: 16px 24px;
+  }
+}
+
 /* ========================================
    GOSPEL LOUNGE SOFT LAUNCH PROMO
 ======================================== */
