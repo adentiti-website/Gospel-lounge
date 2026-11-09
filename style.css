@@ -1,4 +1,200 @@
-    .soft-launch-top-banner {
+
+/* ========================================
+   GOSPEL LOUNGE SOFT LAUNCH PROMO
+======================================== */
+
+.soft-launch-top-banner {
+  position: relative;
+  width: 100%;
+  padding: 55px 24px;
+  background: linear-gradient(
+    135deg,
+    #1b062c 0%,
+    #4b126d 50%,
+    #210630 100%
+  );
+  border-bottom: 5px solid #e9c46a;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+/* Decorative background glow */
+.soft-launch-top-banner::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: rgba(233, 196, 106, 0.12);
+  filter: blur(85px);
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.soft-launch-top-content {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Main headline */
+.soft-launch-top-label {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(28px, 4.5vw, 58px);
+  font-weight: 800;
+  color: #f5d27d;
+  letter-spacing: 2px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Event date */
+.soft-launch-date {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(22px, 3.2vw, 42px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Description */
+.soft-launch-top-message {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(19px, 2.4vw, 29px);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 8px 0;
+}
+
+.soft-launch-top-message span {
+  display: block;
+  font-size: 0.8em;
+  color: #f4d58b;
+  margin-top: 8px;
+}
+
+/* Registration button */
+.soft-launch-top-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 20px 44px;
+  min-height: 60px;
+  background: linear-gradient(
+    135deg,
+    #ffe29a,
+    #dcae49
+  );
+  color: #250b36;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(17px, 2vw, 23px);
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(233, 196, 106, 0.3);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.soft-launch-top-button:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(233, 196, 106, 0.5);
+}
+
+.soft-launch-top-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.soft-launch-small-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e8d9ed;
+  margin: 8px 0 0;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 680px) {
+
+  .soft-launch-top-banner {
+    padding: 38px 18px 42px;
+  }
+
+  .soft-launch-top-content {
+    gap: 12px;
+  }
+
+  .soft-launch-top-label {
+    font-size: clamp(27px, 8vw, 42px);
+    letter-spacing: 1px;
+  }
+
+  .soft-launch-date {
+    font-size: clamp(22px, 6vw, 30px);
+  }
+
+  .soft-launch-top-message {
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .soft-launch-top-message span {
+    font-size: 16px;
+  }
+
+  .soft-launch-top-button {
+    width: 100%;
+    max-width: 360px;
+    padding: 19px 20px;
+    font-size: 19px;
+    box-sizing: border-box;
+  }
+
+  .soft-launch-small-text {
+    font-size: 12px;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 380px) {
+
+  .soft-launch-top-label {
+    font-size: 26px;
+  }
+
+  .soft-launch-date {
+    font-size: 21px;
+  }
+
+  .soft-launch-top-button {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .soft-launch-top-button {
+    transition: none;
+  }
+}
+
+.soft-launch-top-banner {
       background: linear-gradient(110deg, #230b39, #51116d, #260b3b);
       color: #ffffff;
       padding: 13px 20px;
